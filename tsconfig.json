@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "lib": [
+            "es6",
+            "ES2021",
+            "dom"
+        ],
+        "module": "es6",
+        "moduleResolution": "Node",
+        "noImplicitAny": true,
+        "outDir": "./dist/",
+        "plugins": [
+            {
+                "transform": "typescript-transform-extensions",
+                "extensions": {
+                    ".ts": ".js"
+                }
+            }
+        ],
+        "removeComments": true,
+        "resolveJsonModule": true,
+        "rootDir": "./source",
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "strictNullChecks": true,
+        "target": "es5",
+        "typeRoots": [
+            "./node_modules/@types",
+            "./source/@types"
+        ],
+        "types": [
+            "chrome",
+        ]
+    }
+}

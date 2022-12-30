@@ -1,0 +1,148 @@
+html {
+    height: 600px;
+    width: 700px;
+    overflow: hidden !important;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden !important;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+.nav-container {
+    padding: 10px;
+    display: flex !important;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%) !important;
+}
+
+.nav-container>* {
+    display: block;
+    height: 40px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-container>ul {
+    display: flex !important;
+    justify-content: right !important;
+    align-items: right;
+    width: 130px !important;
+}
+
+.nav-container>ul a {
+    margin-left: 10px;
+}
+
+.nav-container>a {
+    width: 100%;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.brand-logo,
+.brand-logo i {
+    color: white !important;
+    font-size: 26px;
+    margin-right: 10px;
+}
+
+.container {
+    margin-top: 10px !important;
+    width: 100% !important;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-icon {
+    margin-right: 10px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tab-icon img {
+    max-width: 32px;
+    height: 32px;
+    width: auto;
+}
+
+.title {
+    font-size: 1.4em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+}
+
+#list-header {
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+#list-header,
+#list-content {
+    margin: 0px !important;
+}
+
+#list-content {
+    height: 435px;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #AAD9FF;
+}
+
+#list-header li,
+#list-content li {
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    height: 50px;
+}
+
+#list-header li *:first-child,
+#list-content li * {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#list-header li *:first-child {
+    width: 100%;
+}
+
+#list-header li *:last-child {
+    width: 80px;
+}
+
+#list-content li *:last-child {
+    padding-right: 0px !important;
+}
